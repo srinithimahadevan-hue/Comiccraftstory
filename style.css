@@ -1,0 +1,182 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #e7e8eb;
+  color: #1d1d1f;
+}
+
+button, a {
+  font: inherit;
+}
+
+.home {
+  background: linear-gradient(rgba(20,20,40,0.55), rgba(20,20,40,0.55)),
+              url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=60');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay { text-align: center; color: white; padding: 24px; }
+.tagline { margin-bottom: 24px; font-size: 1.1em; }
+
+.card {
+  background: white;
+  color: #2b2b3d;
+  border-radius: 14px;
+  padding: 28px;
+  max-width: 420px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  text-align: left;
+}
+
+.card label { display: block; margin-top: 14px; font-weight: 600; font-size: 0.9em; }
+.card input, .card select, .card textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 0.95em;
+}
+
+button, .download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #6a4cff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+button:hover, .download-btn:hover { background: #5539d9; }
+
+.preview-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfe2e7;
+  padding: 12px;
+}
+
+.comic-shell {
+  width: min(100%, 520px);
+  background: #f0f1f3;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 36px rgba(17, 20, 30, 0.12);
+}
+
+.comic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #f7f7f7;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-arrow,
+.menu-dots {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.mini-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1c1d22;
+  color: white;
+  font-size: 0.72rem;
+}
+
+.comic-main {
+  padding: 14px 16px 18px;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.panel-item {
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(52, 60, 76, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.panel-frame {
+  width: 100%;
+  aspect-ratio: 1.15;
+  background: #dfe4dd;
+}
+
+.panel-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panel-text {
+  padding: 8px 10px 10px;
+}
+
+.panel-text h3 {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  color: #2d3036;
+}
+
+.panel-text p {
+  margin: 0;
+  font-size: 0.66rem;
+  line-height: 1.4;
+  color: #444a55;
+}
+
+.export-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.download-btn {
+  margin: 0;
+  background: #6a4cff;
+  border-radius: 12px;
+  min-width: 200px;
+  text-align: center;
+  padding: 14px 18px;
+}
+
+.center-page { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.success { text-align: center; }
